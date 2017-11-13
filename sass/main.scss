@@ -4,25 +4,11 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-a {
-    color: red;
-}
-
-.section {
-    text-align: center;
-    font-size: 3em;
-}
-
-
-/**
-  Fixed button outside the fullpage.js wrapper
-  */
-
 #turnOff,
 #turnOn {
     position: fixed;
     z-index: 999;
-    font-size: 2em;
+    // font-size: 2em;
     cursor: pointer;
     top: 20px;
 }
@@ -33,4 +19,18 @@ a {
 
 #turnOn {
     left: 240px;
+}
+
+//----------------------------
+$up: #e9e6e8;
+$down: #f2f2f2;
+//----------------------
+.head {
+    background: $up;
+    p {
+        color: #b7b7b7;
+        /* text color */
+        font-family: "ProximaNova";
+        font-size: 12px;
+    }
 }

@@ -68,35 +68,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 7, ../sass/main.scss */
-a {
-  color: red;
-}
-
-/* line 11, ../sass/main.scss */
-.section {
-  text-align: center;
-  font-size: 3em;
-}
-
-/**
-  Fixed button outside the fullpage.js wrapper
-  */
-/* line 21, ../sass/main.scss */
 #turnOff,
 #turnOn {
   position: fixed;
   z-index: 999;
-  font-size: 2em;
   cursor: pointer;
   top: 20px;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 #turnOff {
   left: 20px;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 #turnOn {
   left: 240px;
+}
+
+/* line 28, ../sass/main.scss */
+.head {
+  background: #e9e6e8;
+}
+/* line 30, ../sass/main.scss */
+.head p {
+  color: #b7b7b7;
+  /* text color */
+  font-family: "ProximaNova";
+  font-size: 12px;
 }
