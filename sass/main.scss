@@ -1,0 +1,36 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+a {
+    color: red;
+}
+
+.section {
+    text-align: center;
+    font-size: 3em;
+}
+
+
+/**
+  Fixed button outside the fullpage.js wrapper
+  */
+
+#turnOff,
+#turnOn {
+    position: fixed;
+    z-index: 999;
+    font-size: 2em;
+    cursor: pointer;
+    top: 20px;
+}
+
+#turnOff {
+    left: 20px;
+}
+
+#turnOn {
+    left: 240px;
+}
