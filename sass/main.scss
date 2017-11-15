@@ -24,13 +24,93 @@
 //----------------------------
 $up: #e9e6e8;
 $down: #f2f2f2;
+$blush: #e32738;
 //----------------------
 .head {
+    text-align: center;
     background: $up;
+    padding-top: 20px;
     p {
         color: #b7b7b7;
         /* text color */
-        font-family: "ProximaNova";
+        font-family: "ProximaNovaReg";
         font-size: 12px;
     }
+}
+
+.main {
+    background: url('../img/Pics/Monitors/m1.png') no-repeat 20% 50%, url('../img/bgs/bg1.jpg') no-repeat center center;
+    text-align: center;
+    padding: 100px;
+    P {
+        margin-bottom: 40px;
+        padding: 8px 22px 7px 22px;
+        color: white;
+        background-color: black;
+        font-family: "ProximaNovaReg";
+        font-size: 10px;
+        display: inline-block;
+    }
+    font-family: "ProximaNovaReg";
+    font-size: 18px;
+    font-weight: bold;
+    button {
+        margin-top: 40px;
+    }
+}
+
+h1 {
+    color: black;
+    font-family: "UbuntuLight";
+    font-size: 50px;
+    letter-spacing: 0.08em;
+    line-height: 59px;
+}
+
+strong {
+    font-family: 'ProximaNovaBold';
+}
+
+.mon {
+    margin-top: 20px;
+}
+
+.monitor {
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+}
+
+.transparent {
+    display: table;
+    border-collapse: collapse;
+    color: black;
+    margin-top: 40px;
+    float: left;
+}
+
+.transparent-cell {
+    display: table-cell;
+    border: 2px solid black;
+    padding: 17px 28px 16px 28px;
+}
+
+.left {
+    font-family: "ProximaNovaLight";
+    font-size: 18px;
+}
+
+.right {
+    font-family: "ProximaNovaLight";
+    font-size: 15px;
+}
+
+button {
+    background-color: $blush;
+    padding: 20px 25px 19px 25px;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
 }

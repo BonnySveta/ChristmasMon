@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'ProximaNovaReg';
+    src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.otf');
+    src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), /*url('../fonts/ProximaNova-Reg.woff2') format('woff2'),*/
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#PT Sans Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../fonts/ProximaNova-Light/ProximaNova-Light.otf');
+    src: url('../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), /*url('../fonts/ProximaNova-Reg.woff2') format('woff2'),*/
+    url('../fonts/ProximaNova-Light/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light/ProximaNova-Light.ttf') format('truetype'), url('../fonts/ProximaNova-Light/ProximaNova-Light.svg#PT Sans Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.otf');
+    src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Reg.woff2') format('woff2'), url('../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#PT Sans Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('../fonts/UbuntuRegular/UbuntuRegular.otf');
+    src: url('../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/UbuntuRegular.woff2') format('woff2'), url('../fonts/UbuntuRegular/UbuntuRegular.ttf') format('truetype'), url('../fonts/UbuntuRegular/UbuntuRegular.svg#PT Sans Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('../fonts/UbuntuLight/UbuntuLight.otf');
+    src: url('../fonts/UbuntuLight/UbuntuLight.eot?#iefix') format('embedded-opentype'), url('../fonts/UbuntuLight.woff2') format('woff2'), url('../fonts/UbuntuLight/UbuntuLight.ttf') format('truetype'), url('../fonts/UbuntuRegular/UbuntuRegular.svg#PT Sans Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}

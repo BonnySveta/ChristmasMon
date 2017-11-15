@@ -86,14 +86,105 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 240px;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .head {
+  text-align: center;
   background: #e9e6e8;
+  padding-top: 20px;
 }
-/* line 30, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .head p {
   color: #b7b7b7;
   /* text color */
-  font-family: "ProximaNova";
+  font-family: "ProximaNovaReg";
   font-size: 12px;
+}
+
+/* line 41, ../sass/main.scss */
+.main {
+  background: url("../img/Pics/Monitors/m1.png") no-repeat 20% 50%, url("../img/bgs/bg1.jpg") no-repeat center center;
+  text-align: center;
+  padding: 100px;
+  font-family: "ProximaNovaReg";
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 45, ../sass/main.scss */
+.main P {
+  margin-bottom: 40px;
+  padding: 8px 22px 7px 22px;
+  color: white;
+  background-color: black;
+  font-family: "ProximaNovaReg";
+  font-size: 10px;
+  display: inline-block;
+}
+/* line 57, ../sass/main.scss */
+.main button {
+  margin-top: 40px;
+}
+
+/* line 62, ../sass/main.scss */
+h1 {
+  color: black;
+  font-family: "UbuntuLight";
+  font-size: 50px;
+  letter-spacing: 0.08em;
+  line-height: 59px;
+}
+
+/* line 70, ../sass/main.scss */
+strong {
+  font-family: 'ProximaNovaBold';
+}
+
+/* line 74, ../sass/main.scss */
+.mon {
+  margin-top: 20px;
+}
+
+/* line 78, ../sass/main.scss */
+.monitor {
+  position: absolute;
+  left: 200px;
+  z-index: 1;
+}
+
+/* line 84, ../sass/main.scss */
+.transparent {
+  display: table;
+  border-collapse: collapse;
+  color: black;
+  margin-top: 40px;
+  float: left;
+}
+
+/* line 92, ../sass/main.scss */
+.transparent-cell {
+  display: table-cell;
+  border: 2px solid black;
+  padding: 17px 28px 16px 28px;
+}
+
+/* line 98, ../sass/main.scss */
+.left {
+  font-family: "ProximaNovaLight";
+  font-size: 18px;
+}
+
+/* line 103, ../sass/main.scss */
+.right {
+  font-family: "ProximaNovaLight";
+  font-size: 15px;
+}
+
+/* line 108, ../sass/main.scss */
+button {
+  background-color: #e32738;
+  padding: 20px 25px 19px 25px;
+  color: white;
+  outline: none;
+  border: none;
+  font-family: "ProximaNovaReg";
+  font-size: 14px;
 }

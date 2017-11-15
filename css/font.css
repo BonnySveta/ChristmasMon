@@ -20,16 +20,16 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: 'IdealistLight';
-  src: url("../fonts/IdealistLight/IdealistLight.otf");
-  src: url("../fonts/IdealistLight/IdealistLight.eot?#iefix") format("embedded-opentype"), url("../fonts/IdealistLight.woff2") format("woff2"), url("../fonts/IdealistLight/IdealistLight.ttf") format("truetype"), url("../fonts/IdealistLight/IdealistLight.svg#PT Sans Regular") format("svg");
+  font-family: 'UbuntuRegular';
+  src: url("../fonts/UbuntuRegular/UbuntuRegular.otf");
+  src: url("../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuRegular.woff2") format("woff2"), url("../fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype"), url("../fonts/UbuntuRegular/UbuntuRegular.svg#PT Sans Regular") format("svg");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'IdealistRegular';
-  src: url("../fonts/IdealistRegular/IdealistRegular.otf");
-  src: url("../fonts/IdealistRegular/IdealistRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/IdealistRegular.woff2") format("woff2"), url("../fonts/IdealistRegular/IdealistRegular.ttf") format("truetype"), url("../fonts/IdealistRegular/IdealistRegular.svg#PT Sans Regular") format("svg");
+  font-family: 'UbuntuLight';
+  src: url("../fonts/UbuntuLight/UbuntuLight.otf");
+  src: url("../fonts/UbuntuLight/UbuntuLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuLight.woff2") format("woff2"), url("../fonts/UbuntuLight/UbuntuLight.ttf") format("truetype"), url("../fonts/UbuntuRegular/UbuntuRegular.svg#PT Sans Regular") format("svg");
   font-style: normal;
   font-weight: normal;
 }
