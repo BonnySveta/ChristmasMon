@@ -87,29 +87,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 29, ../sass/main.scss */
+section {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+/* line 34, ../sass/main.scss */
 .head {
   text-align: center;
   background: #e9e6e8;
   padding-top: 20px;
 }
-/* line 33, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .head p {
   color: #b7b7b7;
-  /* text color */
   font-family: "ProximaNovaReg";
   font-size: 12px;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .main {
-  background: url("../img/Pics/Monitors/m1.png") no-repeat 20% 50%, url("../img/bgs/bg1.jpg") no-repeat center center;
+  background: url("../img/Pics/Monitors/m1.png") no-repeat 20% 80%, url("../img/bgs/bg1.jpg") no-repeat center center;
   text-align: center;
-  padding: 100px;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
   font-family: "ProximaNovaReg";
   font-size: 18px;
   font-weight: bold;
 }
-/* line 45, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .main P {
   margin-bottom: 40px;
   padding: 8px 22px 7px 22px;
@@ -119,12 +126,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 10px;
   display: inline-block;
 }
-/* line 57, ../sass/main.scss */
-.main button {
-  margin-top: 40px;
-}
 
-/* line 62, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 h1 {
   color: black;
   font-family: "UbuntuLight";
@@ -133,58 +136,145 @@ h1 {
   line-height: 59px;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
+h2 {
+  font-family: "ProximaNovaLight";
+  font-size: 24px;
+}
+
+/* line 78, ../sass/main.scss */
+span {
+  font-family: "ProximaNovaBold";
+}
+
+/* line 83, ../sass/main.scss */
 strong {
   font-family: 'ProximaNovaBold';
 }
 
-/* line 74, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .mon {
   margin-top: 20px;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .monitor {
   position: absolute;
   left: 200px;
   z-index: 1;
 }
 
-/* line 84, ../sass/main.scss */
-.transparent {
-  display: table;
-  border-collapse: collapse;
-  color: black;
+/* line 97, ../sass/main.scss */
+.panel {
+  display: inline-block;
   margin-top: 40px;
-  float: left;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .transparent-cell {
-  display: table-cell;
+  display: inline-block;
   border: 2px solid black;
-  padding: 17px 28px 16px 28px;
+  color: black;
+  height: 50px;
+  vertical-align: middle;
 }
 
-/* line 98, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
+.black-cell {
+  display: inline-block;
+  background: black;
+  color: white;
+  height: 50px;
+  vertical-align: middle;
+  padding: 14px 40px 16px 40px;
+}
+
+/* line 119, ../sass/main.scss */
 .left {
   font-family: "ProximaNovaLight";
   font-size: 18px;
+  padding: 14px 28px 16px 28px;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .right {
   font-family: "ProximaNovaLight";
   font-size: 15px;
+  padding: 17px 28px 16px 28px;
+  margin-right: 15px;
+  margin-left: -6px;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
+.december {
+  padding: 20px 28px 16px 28px;
+  margin-left: 10px;
+}
+
+/* line 138, ../sass/main.scss */
 button {
   background-color: #e32738;
-  padding: 20px 25px 19px 25px;
+  height: 50px;
   color: white;
   outline: none;
   border: none;
   font-family: "ProximaNovaReg";
   font-size: 14px;
+  padding: 9px 28px 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 151, ../sass/main.scss */
+.mouse {
+  margin-top: 228px;
+}
+
+/* line 155, ../sass/main.scss */
+.specification {
+  padding-top: 60px;
+  text-align: left;
+  display: flex;
+  align-items: left;
+}
+/* line 160, ../sass/main.scss */
+.specification p {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+}
+
+/* line 166, ../sass/main.scss */
+.arrow {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 171, ../sass/main.scss */
+.specification {
+  background: url("../img/bgs/bg2.jpg") no-repeat center center;
+}
+
+/* line 175, ../sass/main.scss */
+.mhl {
+  background: url("../img/Pics/Monitors/m2_1.png") no-repeat center right;
+}
+
+/* line 179, ../sass/main.scss */
+.ofer {
+  padding-top: 128px;
+}
+
+/* line 183, ../sass/main.scss */
+.features {
+  padding-top: 80px;
+}
+
+/* line 187, ../sass/main.scss */
+.description {
+  margin-top: 40px;
+  margin-bottom: 58px;
+  font-family: "ProximaNovaLight";
+  font-size: 16px;
+  vertical-align: 0.2;
+  line-height: 24px;
 }

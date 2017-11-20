@@ -26,22 +26,28 @@ $up: #e9e6e8;
 $down: #f2f2f2;
 $blush: #e32738;
 //----------------------
+section {
+    height: 100%;
+    background-color: $down;
+}
+
 .head {
     text-align: center;
     background: $up;
     padding-top: 20px;
     p {
         color: #b7b7b7;
-        /* text color */
         font-family: "ProximaNovaReg";
         font-size: 12px;
     }
 }
 
 .main {
-    background: url('../img/Pics/Monitors/m1.png') no-repeat 20% 50%, url('../img/bgs/bg1.jpg') no-repeat center center;
+    background: url('../img/Pics/Monitors/m1.png') no-repeat 20% 80%, url('../img/bgs/bg1.jpg') no-repeat center center;
     text-align: center;
-    padding: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
     P {
         margin-bottom: 40px;
         padding: 8px 22px 7px 22px;
@@ -54,9 +60,6 @@ $blush: #e32738;
     font-family: "ProximaNovaReg";
     font-size: 18px;
     font-weight: bold;
-    button {
-        margin-top: 40px;
-    }
 }
 
 h1 {
@@ -65,6 +68,16 @@ h1 {
     font-size: 50px;
     letter-spacing: 0.08em;
     line-height: 59px;
+}
+
+h2 {
+    font-family: "ProximaNovaLight";
+    font-size: 24px;
+}
+
+span {
+    font-family: "ProximaNovaBold";
+    //font-size: 24px;
 }
 
 strong {
@@ -81,36 +94,101 @@ strong {
     z-index: 1;
 }
 
-.transparent {
-    display: table;
-    border-collapse: collapse;
-    color: black;
+.panel {
+    display: inline-block;
     margin-top: 40px;
-    float: left;
 }
 
 .transparent-cell {
-    display: table-cell;
+    display: inline-block;
     border: 2px solid black;
-    padding: 17px 28px 16px 28px;
+    color: black;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.black-cell {
+    display: inline-block;
+    background: black;
+    color: white;
+    height: 50px;
+    vertical-align: middle;
+    padding: 14px 40px 16px 40px;
 }
 
 .left {
     font-family: "ProximaNovaLight";
     font-size: 18px;
+    padding: 14px 28px 16px 28px;
 }
 
 .right {
     font-family: "ProximaNovaLight";
     font-size: 15px;
+    padding: 17px 28px 16px 28px;
+    margin-right: 15px;
+    margin-left: -6px;
+}
+
+.december {
+    padding: 20px 28px 16px 28px;
+    margin-left: 10px;
 }
 
 button {
     background-color: $blush;
-    padding: 20px 25px 19px 25px;
+    height: 50px;
     color: white;
     outline: none;
     border: none;
     font-family: "ProximaNovaReg";
     font-size: 14px;
+    padding: 9px 28px 7px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.mouse {
+    margin-top: 228px;
+}
+
+.specification {
+    padding-top: 60px;
+    text-align: left;
+    display: flex;
+    align-items: left;
+    p {
+        font-family: "ProximaNovaReg";
+        font-size: 12px;
+    }
+}
+
+.arrow {
+    float: left;
+    margin-right: 10px;
+}
+
+.specification {
+    background: url('../img/bgs/bg2.jpg') no-repeat center center;
+}
+
+.mhl {
+    background: url('../img/Pics/Monitors/m2_1.png') no-repeat center right;
+}
+
+.ofer {
+    padding-top: 128px;
+}
+
+.features {
+    padding-top: 80px;
+}
+
+.description {
+    margin-top: 40px;
+    margin-bottom: 58px;
+    font-family: "ProximaNovaLight";
+    font-size: 16px;
+    vertical-align: 0.2;
+    line-height: 24px;
 }
