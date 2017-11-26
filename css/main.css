@@ -90,22 +90,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 section {
   height: 100%;
   background-color: #f2f2f2;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
+p {
+  font-family: "ProximaNovaLight";
+  font-size: 16px;
+  color: black;
+}
+
+/* line 44, ../sass/main.scss */
+slide {
+  height: 100%;
+  background-color: #f2f2f2;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 53, ../sass/main.scss */
 .head {
   text-align: center;
   background: #e9e6e8;
   padding-top: 20px;
 }
-/* line 38, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .head p {
   color: #b7b7b7;
   font-family: "ProximaNovaReg";
   font-size: 12px;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .main {
   background: url("../img/Pics/Monitors/m1.png") no-repeat 20% 80%, url("../img/bgs/bg1.jpg") no-repeat center center;
   text-align: center;
@@ -116,7 +137,7 @@ section {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 51, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .main P {
   margin-bottom: 40px;
   padding: 8px 22px 7px 22px;
@@ -127,7 +148,7 @@ section {
   display: inline-block;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 h1 {
   color: black;
   font-family: "UbuntuLight";
@@ -136,41 +157,42 @@ h1 {
   line-height: 59px;
 }
 
-/* line 73, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 h2 {
   font-family: "ProximaNovaLight";
   font-size: 24px;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 span {
-  font-family: "ProximaNovaBold";
+  font-family: "ProximaNovaReg";
+  font-size: 30px;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 strong {
   font-family: 'ProximaNovaBold';
 }
 
-/* line 87, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .mon {
   margin-top: 20px;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .monitor {
   position: absolute;
   left: 200px;
   z-index: 1;
 }
 
-/* line 97, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .panel {
   display: inline-block;
   margin-top: 40px;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .transparent-cell {
   display: inline-block;
   border: 2px solid black;
@@ -179,7 +201,7 @@ strong {
   vertical-align: middle;
 }
 
-/* line 110, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .black-cell {
   display: inline-block;
   background: black;
@@ -189,14 +211,14 @@ strong {
   padding: 14px 40px 16px 40px;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .left {
   font-family: "ProximaNovaLight";
   font-size: 18px;
   padding: 14px 28px 16px 28px;
 }
 
-/* line 125, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .right {
   font-family: "ProximaNovaLight";
   font-size: 15px;
@@ -205,13 +227,18 @@ strong {
   margin-left: -6px;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .december {
   padding: 20px 28px 16px 28px;
   margin-left: 10px;
 }
+/* line 155, ../sass/main.scss */
+.december p {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+}
 
-/* line 138, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 button {
   background-color: #e32738;
   height: 50px;
@@ -225,56 +252,142 @@ button {
   vertical-align: middle;
 }
 
-/* line 151, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .mouse {
   margin-top: 228px;
 }
 
-/* line 155, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 .specification {
-  padding-top: 60px;
   text-align: left;
   display: flex;
-  align-items: left;
-}
-/* line 160, ../sass/main.scss */
-.specification p {
-  font-family: "ProximaNovaReg";
-  font-size: 12px;
+  align-items: center;
+  height: 100%;
 }
 
-/* line 166, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .arrow {
   float: left;
   margin-right: 10px;
 }
 
-/* line 171, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .specification {
   background: url("../img/bgs/bg2.jpg") no-repeat center center;
 }
 
-/* line 175, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .mhl {
   background: url("../img/Pics/Monitors/m2_1.png") no-repeat center right;
 }
 
-/* line 179, ../sass/main.scss */
-.ofer {
-  padding-top: 128px;
-}
-
-/* line 183, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .features {
   padding-top: 80px;
 }
 
-/* line 187, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .description {
   margin-top: 40px;
   margin-bottom: 58px;
-  font-family: "ProximaNovaLight";
-  font-size: 16px;
   vertical-align: 0.2;
   line-height: 24px;
+}
+
+/* line 210, ../sass/main.scss */
+.caracters p {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+}
+
+/* line 216, ../sass/main.scss */
+.center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* line 222, ../sass/main.scss */
+table {
+  font-family: "ProximaNovaReg";
+  font-size: 16px;
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+/* line 229, ../sass/main.scss */
+tr {
+  border-bottom: 4px solid #e9e6e8;
+  height: 38px;
+}
+
+/* line 234, ../sass/main.scss */
+td {
+  padding-left: 40px;
+}
+
+/* line 238, ../sass/main.scss */
+.bgup {
+  background-color: #e9e6e8;
+  height: 100%;
+}
+
+/* line 243, ../sass/main.scss */
+.ofer {
+  text-align: center;
+}
+
+/* line 247, ../sass/main.scss */
+.pos {
+  float: right;
+  margin-top: 56px;
+}
+
+/* line 252, ../sass/main.scss */
+.subHeader {
+  position: fixed;
+  top: 60px;
+}
+/* line 255, ../sass/main.scss */
+.subHeader p {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+}
+
+/* line 261, ../sass/main.scss */
+h3 {
+  color: #e32738;
+  font-family: "ProximaNovaReg";
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+/* line 269, ../sass/main.scss */
+.contacts h2 {
+  font-family: "ProximaNovaReg";
+  font-size: 24px;
+}
+/* line 273, ../sass/main.scss */
+.contacts h2 {
+  font-family: "ProximaNovaReg";
+  font-size: 24px;
+}
+/* line 277, ../sass/main.scss */
+.contacts p {
+  font-family: "ProximaNovaLight";
+  font-size: 18px;
+}
+/* line 281, ../sass/main.scss */
+.contacts .schedule {
+  margin: 30px 0px 66px;
+  font-family: "ProximaNovaReg";
+}
+/* line 284, ../sass/main.scss */
+.contacts .schedule p {
+  font-size: 14px;
+  color: white;
+}
+/* line 288, ../sass/main.scss */
+.contacts .schedule .smallBlack-cell {
+  padding: 19px 40px 16px 40px;
 }

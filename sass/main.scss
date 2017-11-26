@@ -29,6 +29,25 @@ $blush: #e32738;
 section {
     height: 100%;
     background-color: $down;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+p {
+    font-family: "ProximaNovaLight";
+    font-size: 16px;
+    color: black
+}
+
+slide {
+    height: 100%;
+    background-color: $down;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .head {
@@ -76,8 +95,8 @@ h2 {
 }
 
 span {
-    font-family: "ProximaNovaBold";
-    //font-size: 24px;
+    font-family: "ProximaNovaReg";
+    font-size: 30px;
 }
 
 strong {
@@ -133,6 +152,10 @@ strong {
 .december {
     padding: 20px 28px 16px 28px;
     margin-left: 10px;
+    p {
+        font-family: "ProximaNovaReg";
+        font-size: 12px;
+    }
 }
 
 button {
@@ -153,14 +176,10 @@ button {
 }
 
 .specification {
-    padding-top: 60px;
     text-align: left;
     display: flex;
-    align-items: left;
-    p {
-        font-family: "ProximaNovaReg";
-        font-size: 12px;
-    }
+    align-items: center;
+    height: 100%;
 }
 
 .arrow {
@@ -176,10 +195,6 @@ button {
     background: url('../img/Pics/Monitors/m2_1.png') no-repeat center right;
 }
 
-.ofer {
-    padding-top: 128px;
-}
-
 .features {
     padding-top: 80px;
 }
@@ -187,8 +202,91 @@ button {
 .description {
     margin-top: 40px;
     margin-bottom: 58px;
-    font-family: "ProximaNovaLight";
-    font-size: 16px;
     vertical-align: 0.2;
     line-height: 24px;
+}
+
+.caracters {
+    p {
+        font-family: "ProximaNovaReg";
+        font-size: 12px;
+    }
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    font-family: "ProximaNovaReg";
+    font-size: 16px;
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 4px solid $up;
+    height: 38px;
+}
+
+td {
+    padding-left: 40px
+}
+
+.bgup {
+    background-color: $up;
+    height: 100%;
+}
+
+.ofer {
+    text-align: center;
+}
+
+.pos {
+    float: right;
+    margin-top: 56px;
+}
+
+.subHeader {
+    position: fixed;
+    top: 60px;
+    p {
+        font-family: "ProximaNovaReg";
+        font-size: 12px;
+    }
+}
+
+h3 {
+    color: $blush;
+    font-family: "ProximaNovaReg";
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.contacts {
+    h2 {
+        font-family: "ProximaNovaReg";
+        font-size: 24px;
+    }
+    h2 {
+        font-family: "ProximaNovaReg";
+        font-size: 24px;
+    }
+    p {
+        font-family: "ProximaNovaLight";
+        font-size: 18px;
+    }
+    .schedule {
+        margin: 30px 0px 66px;
+        font-family: "ProximaNovaReg";
+        p {
+            font-size: 14px;
+            color: white;
+        }
+        .smallBlack-cell {
+            padding: 19px 40px 16px 40px;
+        }
+    }
 }
