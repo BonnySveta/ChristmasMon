@@ -308,3 +308,25 @@ input {
     padding-left: 32px;
     margin-right: 10px;
 }
+
+.map {
+    height: 550px;
+    background-color: rgb(93, 187, 241);
+}
+
+.slide-hand {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+}
+
+.section-venki {
+    display: flex;
+    align-items: center;
+}
+
+.venki__action {
+    margin-top: 70px;
+    text-align: center;
+}
