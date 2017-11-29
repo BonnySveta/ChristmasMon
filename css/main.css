@@ -329,7 +329,11 @@ td {
 
 /* line 238, ../sass/main.scss */
 .bgup {
-  background-color: #e9e6e8;
+  background: #e9e6e8;
+  background: -moz-linear-gradient(top, #e9e6e8 0%, #f2f2f2 100%); 
+  background: -webkit-linear-gradient(top, #e9e6e8 0%,#f2f2f2 100%);
+  background: linear-gradient(to bottom, #e9e6e8 0%,#f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e6e8', endColorstr='#f2f2f2',GradientType=0 );
   height: 100%;
 }
 
@@ -410,14 +414,123 @@ input {
   right: 0;
   top: 50%;
   z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform .4s ease-out
+}
+
+.slide-hand.hand-animated {
+  transform: translateX(0);
+  opacity: 1
 }
 
 .section-venki {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .venki__action {
   margin-top: 70px;
   text-align: center;
+}
+
+.specification__inner,
+.main__inner,
+.section-venki__inner {
+  flex: 1 1 auto;
+}
+
+.main {
+  height: 100%;
+  padding-top: 0;
+  background: url("../img/bgs/bg1.jpg") no-repeat center center;
+}
+
+.head {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.site-logo {
+  position: absolute;
+}
+
+.site-slogan {
+  padding-top: 18px;
+}
+
+.subHeader {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+
+.bgup {
+  position: relative;
+}
+
+.mouse {
+  margin-top: 0;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.mouse div + div {
+  margin-top: 4px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 1340px
+  }
+}
+
+.specification {
+  background-image: none;
+  overflow: hidden;
+}
+
+.specification.specification-1 {
+  background-image: url(../img/bgs/bg3.jpg);
+}
+
+.specification.specification-2 {
+  background-image: url(../img/bgs/bg4.jpg);
+}
+
+.specification.specification-3 {
+  background-image: url(../img/bgs/bg5.jpg);
+}
+
+.slide-candy {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  font-size: 0;
+  margin-left: 60px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform .4s ease-out
+}
+
+.slide-candy.candy-animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-venki .ofer {
+  max-width: 260px;
+  margin: 0 auto
+}
+
+.site-logo {
+  float: left;
 }
