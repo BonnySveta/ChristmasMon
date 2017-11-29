@@ -4,23 +4,32 @@ $('#fullpage').fullpage({
 });
 
 $(document).ready(function() {
-    $('#slides').bind('mousewheel', function(e) {
+    $('#slides').bind('wheel', function(e) {
         e.stopPropagation();
-        if (e.originalEvent.wheelDelta < 0) {
+
+        var mark = null
+        $(e.target).parents().map(function() {
+            console.log($(this).attr("data-slide"))
+
+            if (!mark) {
+                mark = $(this).attr("data-slide")
+            }
+        })
+
+        if (e.originalEvent.wheelDelta < 0 || e.originalEvent.deltaY > 0) {
             //scroll down
-            if (e.target.innerText === "Two 4") {
+            if (mark === "end") {
                 $.fn.fullpage.moveSectionDown();
             } else {
                 $.fn.fullpage.moveSlideRight();
             }
         } else {
             //scroll up 
-            if (e.target.innerText === "Two 1") {
+            if (mark === "start") {
                 $.fn.fullpage.moveSectionUp();
             } else {
                 $.fn.fullpage.moveSlideLeft();
             }
-
         }
     });
 });
