@@ -263,6 +263,7 @@ button {
   display: flex;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 /* line 185, ../sass/main.scss */
@@ -273,7 +274,7 @@ button {
 
 /* line 190, ../sass/main.scss */
 .specification {
-  background: url("../img/bgs/bg2.jpg") no-repeat center center;
+  background: url("../img/bgs/bg3.jpg") no-repeat center center;
 }
 
 /* line 194, ../sass/main.scss */
@@ -400,4 +401,23 @@ input {
   border-radius: 50px;
   padding-left: 32px;
   margin-right: 10px;
+}
+
+/* SERGE */
+
+.slide-hand {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+}
+
+.section-venki {
+  display: flex;
+  align-items: center;
+}
+
+.venki__action {
+  margin-top: 70px;
+  text-align: center;
 }
