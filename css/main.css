@@ -512,7 +512,13 @@ td {
 /* line 238, ../sass/main.scss */
 
 .bgup {
-    background-color: #e9e6e8;
+    background: #e9e6e8;
+    background: -moz-linear-gradient(top, #e9e6e8 0%, #f2f2f2 100%); 
+    background: -webkit-linear-gradient(top, #e9e6e8 0%,#f2f2f2 100%);
+    background: -webkit-linear-gradient(#e9e6e8 0%, #f2f2f2 100%);
+    background: -o-linear-gradient(#e9e6e8 0%, #f2f2f2 100%);
+    background: linear-gradient(#e9e6e8 0%, #f2f2f2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e6e8', endColorstr='#f2f2f2',GradientType=0 );
     height: 100%;
 }
 
@@ -653,8 +659,7 @@ input {
     opacity: 0;
     transform: translateX(100%);
     opacity: 0;
-    <<<<<<< HEAD transition: transform 0.4s ease-out;
-    =======transition: transform .4s ease >>>>>>> e35c9f250bec2a8576b745a8d514bfd133a38170
+    transition: transform .4s ease
 }
 
 
@@ -663,8 +668,7 @@ input {
 .slide-hand.hand-animated {
     transform: translateX(0);
     opacity: 1;
-    <<<<<<< HEAD=======animation: animatonOpacity .6s;
-    >>>>>>>e35c9f250bec2a8576b745a8d514bfd133a38170
+    animation: animatonOpacity .6s;
 }
 
 
@@ -809,8 +813,7 @@ input {
     margin-left: 60px;
     transform: translateY(100%);
     opacity: 0;
-    <<<<<<< HEAD transition: transform 0.4s ease-out;
-    =======transition: transform .25s ease >>>>>>> e35c9f250bec2a8576b745a8d514bfd133a38170
+    transition: transform 0.4s ease-out;
 }
 
 
