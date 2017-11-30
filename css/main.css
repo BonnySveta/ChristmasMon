@@ -570,3 +570,13 @@ input {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+button {
+  transition: background-color .185s ease
+}
+
+button:hover,
+button:active,
+button:active:focus {
+  background-color: #ff283b;
+}
