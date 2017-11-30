@@ -12,6 +12,11 @@ $(document).ready(function(){
 			} else {
 				$('.slide-candy').removeClass('candy-animated');
 			}
+			if(slideAnchor == 'slide2') {
+				$('.slide-zoom').addClass('zoom-animated');
+			} else {
+				$('.slide-zoom').removeClass('zoom-animated');
+			}
 		},
 
 		afterLoad: function(anchorLink, index){

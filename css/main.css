@@ -417,12 +417,13 @@ input {
   opacity: 0;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform .4s ease-out
+  transition: transform .4s ease
 }
 
 .slide-hand.hand-animated {
   transform: translateX(0);
-  opacity: 1
+  opacity: 1;
+  animation: animatonOpacity .6s;
 }
 
 .section-venki {
@@ -518,12 +519,13 @@ input {
   margin-left: 60px;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform .4s ease-out
+  transition: transform .25s ease
 }
 
 .slide-candy.candy-animated {
   opacity: 1;
   transform: translateY(0);
+  animation: animatonOpacity .8s;
 }
 
 .section-venki .ofer {
@@ -533,4 +535,38 @@ input {
 
 .site-logo {
   float: left;
+}
+
+.slide-zoom {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -266px;
+  margin-left: 20px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform .4s ease-out
+}
+
+.slide-zoom.zoom-animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animatonOpacity .2s;
+}
+
+@-webkit-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
