@@ -263,7 +263,6 @@ button {
   display: flex;
   align-items: center;
   height: 100%;
-  position: relative;
 }
 
 /* line 185, ../sass/main.scss */
@@ -274,7 +273,7 @@ button {
 
 /* line 190, ../sass/main.scss */
 .specification {
-  background: url("../img/bgs/bg3.jpg") no-repeat center center;
+  background: url("../img/bgs/bg2.jpg") no-repeat center center;
 }
 
 /* line 194, ../sass/main.scss */
@@ -329,11 +328,7 @@ td {
 
 /* line 238, ../sass/main.scss */
 .bgup {
-  background: #e9e6e8;
-  background: -moz-linear-gradient(top, #e9e6e8 0%, #f2f2f2 100%); 
-  background: -webkit-linear-gradient(top, #e9e6e8 0%,#f2f2f2 100%);
-  background: linear-gradient(to bottom, #e9e6e8 0%,#f2f2f2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e6e8', endColorstr='#f2f2f2',GradientType=0 );
+  background-color: #e9e6e8;
   height: 100%;
 }
 
@@ -398,6 +393,17 @@ h3 {
 }
 
 /* line 294, ../sass/main.scss */
+.circle {
+  border-radius: 50px;
+}
+
+/* line 298, ../sass/main.scss */
+.form {
+  padding-top: 34px;
+  margin-bottom: 56px;
+}
+
+/* line 303, ../sass/main.scss */
 input {
   border: 2px solid #e32738;
   height: 50px;
@@ -407,8 +413,14 @@ input {
   margin-right: 10px;
 }
 
-/* SERGE */
+/* line 312, ../sass/main.scss */
+.map {
+  height: 550px;
+  background-color: #5dbbf1;
+}
 
+/* SERGE */
+/* line 320, ../sass/main.scss */
 .slide-hand {
   position: absolute;
   right: 0;
@@ -417,51 +429,60 @@ input {
   opacity: 0;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform .4s ease-out
+  transition: transform 0.4s ease-out;
 }
 
+/* line 331, ../sass/main.scss */
 .slide-hand.hand-animated {
   transform: translateX(0);
-  opacity: 1
+  opacity: 1;
 }
 
+/* line 336, ../sass/main.scss */
 .section-venki {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
+/* line 342, ../sass/main.scss */
 .venki__action {
   margin-top: 70px;
   text-align: center;
 }
 
+/* line 347, ../sass/main.scss */
 .specification__inner,
 .main__inner,
 .section-venki__inner {
   flex: 1 1 auto;
 }
 
+/* line 353, ../sass/main.scss */
 .main {
   height: 100%;
   padding-top: 0;
   background: url("../img/bgs/bg1.jpg") no-repeat center center;
 }
 
+/* line 359, ../sass/main.scss */
 .head {
   position: absolute;
   left: 0;
   right: 0;
 }
 
+/* line 365, ../sass/main.scss */
 .site-logo {
   position: absolute;
 }
 
+/* line 369, ../sass/main.scss */
 .site-slogan {
   padding-top: 18px;
 }
 
+/* line 373, ../sass/main.scss */
 .subHeader {
   position: absolute;
   z-index: 2;
@@ -469,10 +490,12 @@ input {
   right: 0;
 }
 
+/* line 380, ../sass/main.scss */
 .bgup {
   position: relative;
 }
 
+/* line 384, ../sass/main.scss */
 .mouse {
   margin-top: 0;
   position: absolute;
@@ -482,33 +505,39 @@ input {
   text-align: center;
 }
 
+/* line 393, ../sass/main.scss */
 .mouse div + div {
   margin-top: 4px;
 }
 
 @media only screen and (min-width: 1400px) {
+  /* line 398, ../sass/main.scss */
   .container {
-    width: 1340px
+    width: 1340px;
   }
 }
-
+/* line 403, ../sass/main.scss */
 .specification {
   background-image: none;
   overflow: hidden;
 }
 
+/* line 408, ../sass/main.scss */
 .specification.specification-1 {
   background-image: url(../img/bgs/bg3.jpg);
 }
 
+/* line 412, ../sass/main.scss */
 .specification.specification-2 {
   background-image: url(../img/bgs/bg4.jpg);
 }
 
+/* line 416, ../sass/main.scss */
 .specification.specification-3 {
   background-image: url(../img/bgs/bg5.jpg);
 }
 
+/* line 420, ../sass/main.scss */
 .slide-candy {
   position: absolute;
   left: 50%;
@@ -518,19 +547,35 @@ input {
   margin-left: 60px;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform .4s ease-out
+  transition: transform 0.4s ease-out;
 }
 
+/* line 432, ../sass/main.scss */
 .slide-candy.candy-animated {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* line 437, ../sass/main.scss */
 .section-venki .ofer {
   max-width: 260px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
+/* line 442, ../sass/main.scss */
 .site-logo {
   float: left;
+}
+
+/* line 446, ../sass/main.scss */
+.table-action {
+  margin-top: 70px;
+}
+
+/* line 451, ../sass/main.scss */
+.footer {
+  height: 250px;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
 }
