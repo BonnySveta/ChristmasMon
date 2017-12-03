@@ -733,7 +733,7 @@ label {
 }
 /* line 588, ../sass/main.scss */
 .modal__info ul {
-  margin-top: 500px;
+  flex: 1 1 auto;
 }
 /* line 591, ../sass/main.scss */
 .modal__info li {

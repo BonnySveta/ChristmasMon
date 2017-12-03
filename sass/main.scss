@@ -586,7 +586,7 @@ label {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     ul {
-        margin-top: 500px;
+        flex: 1 1 auto;
     }
     li {
         margin: 18px;
