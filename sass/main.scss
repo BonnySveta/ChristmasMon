@@ -97,6 +97,8 @@ h2 {
 span {
     font-family: "ProximaNovaReg";
     font-size: 30px;
+    vertical-align: 0.2;
+    line-height: 34px;
 }
 
 strong {
@@ -180,15 +182,12 @@ button {
     display: flex;
     align-items: center;
     height: 100%;
+    background: url('../img/bgs/bg2.jpg') no-repeat center center;
 }
 
 .arrow {
     float: left;
     margin-right: 10px;
-}
-
-.specification {
-    background: url('../img/bgs/bg2.jpg') no-repeat center center;
 }
 
 .mhl {
@@ -266,6 +265,7 @@ h3 {
 }
 
 .contacts {
+    text-align: center;
     h2 {
         font-family: "ProximaNovaReg";
         font-size: 24px;
@@ -277,6 +277,9 @@ h3 {
     p {
         font-family: "ProximaNovaLight";
         font-size: 18px;
+    }
+    button {
+        border-radius: 50px;
     }
     .schedule {
         margin: 30px 0px 66px;
@@ -291,10 +294,6 @@ h3 {
     }
 }
 
-.circle {
-    border-radius: 50px;
-}
-
 .form {
     padding-top: 34px;
     margin-bottom: 56px;
@@ -307,11 +306,6 @@ input {
     border-radius: 50px;
     padding-left: 32px;
     margin-right: 10px;
-}
-
-.map {
-    height: 550px;
-    background-color: rgb(93, 187, 241);
 }
 
 
@@ -448,9 +442,80 @@ input {
 }
 
 // Bonny
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.address {
+    margin-bottom: 26px;
+}
+
+input {
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+input.name {
+    width: 230px;
+    font-size: 14px;
+}
+
+input.phone {
+    width: 314px;
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+    color: $blush;
+}
+
+::-moz-placeholder {
+    color: $blush;
+}
+
 .footer {
     height: 250px;
     background-color: #1b1b1b;
-    display: flex;
-    align-items: center;
+    padding-top: 66px;
+    color: white;
+    p {
+        color: white;
+        font-family: "ProximaNovaLight";
+        font-size: 16px;
+        vertical-align: 0.2;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.phones {
+    margin-top: 20px;
+}
+
+.timing {
+    margin-top: 9px;
+}
+
+.monline {
+    margin-top: 40px;
 }
