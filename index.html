@@ -24,11 +24,13 @@
                         <div class="site-slogan">
                             <p> ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ ОТ КОМПАНИИ МОНЛАЙН В ХАБАРОВСКЕ </p>
                         </div>
-                        <div class="hamburger-menu">
-                            <div class="one"></div>
-                            <div class="two"></div>
-                            <div class="three"></div>
-                        </div>
+                        <label for="modal">
+                            <div for="modal" class="hamburger-menu">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </div>
+                        </label>
                         <script src="js/hamburger.js"></script>
                     </div>
 
@@ -422,10 +424,41 @@
             </div>
         </div>
 
+
+        <!-- Modal -->
+        <input class="modal__check" type="checkbox" id="modal" />
+        <div class="modal">
+            <label class="modal__closetwo" for="modal"></label>
+            <div class="modal__info">
+                <label class="modal__close" for="modal">&times;</label>
+                <div class="subHeader">
+                    <div class="container">
+                        <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                        <p class="arrow"> КОНТАКТЫ И АДРЕСА </p>
+                    </div>
+                </div>
+                <div class="section-venki__inner">
+                    <ul>
+                        <li>ГЛАВНАЯ СТРАНИЦА</li>
+                        <li>ОПИСАНИЕ</li>
+                        <li>ХАРАКТЕРИСТИКИ</li>
+                        <li>ОСОБОЕ ПРЕДЛОЖЕНИЕ</li>
+                        <li>КОНТАКТЫ И АДРЕСА</li>
+                        <li>КАРТА</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+
+
+
+
 
 </body>
 
