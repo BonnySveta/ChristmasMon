@@ -161,7 +161,7 @@ strong {
 }
 
 button {
-    background-color: $blush;
+    background: linear-gradient(to top, $blush, #ff5c6a); //background-color: $blush;
     height: 50px;
     color: white;
     outline: none;
@@ -444,9 +444,8 @@ input {
 // Bonny
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 56.25%;
     position: relative;
-    height: 0;
+    height: calc(100% - 250px);
 }
 
 .map-responsive iframe {
@@ -522,7 +521,7 @@ input.phone {
 
 .hamburger-menu {
     height: 1em;
-    padding: 0.2em;
+    padding: 42px;
     cursor: pointer;
     margin: 0 auto;
     position: relative;
@@ -530,8 +529,8 @@ input.phone {
     div {
         background-color: black;
         width: 2em;
-        height: 0.2em;
-        margin-bottom: 0.2em;
+        height: 4px;
+        margin-bottom: 5px;
         transition: all 0.2s ease-out;
     }
     &.open {
@@ -544,6 +543,12 @@ input.phone {
         .three {
             transform: translateY(-0.4em) rotate(-45deg);
         }
+    }
+}
+
+.hamburger-menu:hover {
+    div {
+        background-color: $blush;
     }
 }
 
@@ -590,9 +595,11 @@ label {
     }
     li {
         margin: 18px;
+        cursor: pointer;
     }
     li:hover {
         color: $blush;
+        cursor: pointer;
     }
     p {
         color: white;

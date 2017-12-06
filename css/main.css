@@ -242,7 +242,7 @@ strong {
 
 /* line 163, ../sass/main.scss */
 button {
-  background-color: #e32738;
+  background: linear-gradient(to top, #e32738, #ff5c6a);
   height: 50px;
   color: white;
   outline: none;
@@ -570,12 +570,11 @@ input {
 /* line 445, ../sass/main.scss */
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: calc(100% - 250px);
 }
 
-/* line 452, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -583,58 +582,58 @@ input {
   position: absolute;
 }
 
-/* line 460, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 464, ../sass/main.scss */
+/* line 463, ../sass/main.scss */
 .address {
   margin-bottom: 26px;
 }
 
-/* line 468, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 input {
   font-family: "ProximaNovaReg";
   font-size: 14px;
 }
 
-/* line 473, ../sass/main.scss */
+/* line 472, ../sass/main.scss */
 input[type=submit] {
   cursor: pointer;
   margin-top: 30px;
 }
 
-/* line 478, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 input.name {
   width: 230px;
   font-size: 14px;
 }
 
-/* line 483, ../sass/main.scss */
+/* line 482, ../sass/main.scss */
 input.phone {
   width: 314px;
   font-size: 14px;
 }
 
-/* line 488, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 ::-webkit-input-placeholder {
   color: #e32738;
 }
 
-/* line 492, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 ::-moz-placeholder {
   color: #e32738;
 }
 
-/* line 496, ../sass/main.scss */
+/* line 495, ../sass/main.scss */
 .footer {
   height: 250px;
   background-color: #1b1b1b;
   padding-top: 66px;
   color: white;
 }
-/* line 501, ../sass/main.scss */
+/* line 500, ../sass/main.scss */
 .footer p {
   color: white;
   font-family: "ProximaNovaLight";
@@ -644,58 +643,63 @@ input.phone {
   margin-bottom: 5px;
 }
 
-/* line 511, ../sass/main.scss */
+/* line 510, ../sass/main.scss */
 .phones {
   margin-top: 20px;
 }
 
-/* line 515, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 .timing {
   margin-top: 9px;
 }
 
-/* line 519, ../sass/main.scss */
+/* line 518, ../sass/main.scss */
 .monline {
   margin-top: 40px;
 }
 
-/* line 523, ../sass/main.scss */
+/* line 522, ../sass/main.scss */
 .hamburger-menu {
   height: 1em;
-  padding: 0.2em;
+  padding: 42px;
   cursor: pointer;
   margin: 0 auto;
   position: relative;
   left: 100%;
 }
-/* line 530, ../sass/main.scss */
+/* line 529, ../sass/main.scss */
 .hamburger-menu div {
   background-color: black;
   width: 2em;
-  height: 0.2em;
-  margin-bottom: 0.2em;
+  height: 4px;
+  margin-bottom: 5px;
   transition: all 0.2s ease-out;
 }
-/* line 538, ../sass/main.scss */
+/* line 537, ../sass/main.scss */
 .hamburger-menu.open .one {
   transform: translateY(0.4em) rotate(45deg);
 }
-/* line 541, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 .hamburger-menu.open .two {
   opacity: 0;
 }
-/* line 544, ../sass/main.scss */
+/* line 543, ../sass/main.scss */
 .hamburger-menu.open .three {
   transform: translateY(-0.4em) rotate(-45deg);
 }
 
 /* line 550, ../sass/main.scss */
+.hamburger-menu:hover div {
+  background-color: #e32738;
+}
+
+/* line 555, ../sass/main.scss */
 label {
   cursor: pointer;
   user-select: none;
 }
 
-/* line 555, ../sass/main.scss */
+/* line 560, ../sass/main.scss */
 .modal {
   position: fixed;
   z-index: 1;
@@ -710,12 +714,12 @@ label {
   transition: opacity .3s;
 }
 
-/* line 570, ../sass/main.scss */
+/* line 575, ../sass/main.scss */
 .modal__check {
   display: none;
 }
 
-/* line 574, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .modal__info {
   text-align: center;
   color: white;
@@ -731,24 +735,26 @@ label {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-/* line 588, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 .modal__info ul {
   flex: 1 1 auto;
 }
-/* line 591, ../sass/main.scss */
+/* line 596, ../sass/main.scss */
 .modal__info li {
   margin: 18px;
+  cursor: pointer;
 }
-/* line 594, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 .modal__info li:hover {
   color: #e32738;
+  cursor: pointer;
 }
-/* line 597, ../sass/main.scss */
+/* line 604, ../sass/main.scss */
 .modal__info p {
   color: white;
 }
 
-/* line 602, ../sass/main.scss */
+/* line 609, ../sass/main.scss */
 .modal__close {
   font-family: serif;
   position: absolute;
@@ -762,7 +768,7 @@ label {
   text-align: center;
 }
 
-/* line 615, ../sass/main.scss */
+/* line 622, ../sass/main.scss */
 .modal__closetwo {
   position: absolute;
   z-index: -1;
@@ -772,18 +778,18 @@ label {
   bottom: 0;
 }
 
-/* line 624, ../sass/main.scss */
+/* line 631, ../sass/main.scss */
 .modal__check:checked + .modal {
   opacity: 1;
   right: 0;
 }
 
-/* line 629, ../sass/main.scss */
+/* line 636, ../sass/main.scss */
 .modal__close:hover {
   opacity: 0.7;
 }
 
-/* line 633, ../sass/main.scss */
+/* line 640, ../sass/main.scss */
 .modal__info::-webkit-scrollbar {
   display: none;
 }
