@@ -663,43 +663,56 @@ input.phone {
   height: 1em;
   padding: 42px;
   cursor: pointer;
-  margin: 0 auto;
   position: relative;
   left: 100%;
 }
-/* line 529, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 .hamburger-menu div {
   background-color: black;
-  width: 2em;
+  width: 40px;
   height: 4px;
   margin-bottom: 5px;
   transition: all 0.2s ease-out;
 }
-/* line 537, ../sass/main.scss */
+/* line 536, ../sass/main.scss */
 .hamburger-menu.open .one {
-  transform: translateY(0.4em) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
-/* line 540, ../sass/main.scss */
+/* line 539, ../sass/main.scss */
 .hamburger-menu.open .two {
   opacity: 0;
 }
-/* line 543, ../sass/main.scss */
+/* line 542, ../sass/main.scss */
 .hamburger-menu.open .three {
-  transform: translateY(-0.4em) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+}
+/* line 547, ../sass/main.scss */
+.hamburger-menu.mod div {
+  background-color: #e32738;
 }
 
-/* line 550, ../sass/main.scss */
+/* line 554, ../sass/main.scss */
 .hamburger-menu:hover div {
   background-color: #e32738;
 }
 
-/* line 555, ../sass/main.scss */
+/* line 559, ../sass/main.scss */
+.hamburger-menu.mod {
+  margin-top: 50px;
+}
+
+/* line 564, ../sass/main.scss */
+.hamburger-menu.mod:hover div {
+  background-color: white;
+}
+
+/* line 569, ../sass/main.scss */
 label {
   cursor: pointer;
   user-select: none;
 }
 
-/* line 560, ../sass/main.scss */
+/* line 574, ../sass/main.scss */
 .modal {
   position: fixed;
   z-index: 1;
@@ -714,12 +727,12 @@ label {
   transition: opacity .3s;
 }
 
-/* line 575, ../sass/main.scss */
+/* line 589, ../sass/main.scss */
 .modal__check {
   display: none;
 }
 
-/* line 579, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 .modal__info {
   text-align: center;
   color: white;
@@ -735,26 +748,26 @@ label {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-/* line 593, ../sass/main.scss */
+/* line 607, ../sass/main.scss */
 .modal__info ul {
   flex: 1 1 auto;
 }
-/* line 596, ../sass/main.scss */
+/* line 610, ../sass/main.scss */
 .modal__info li {
   margin: 18px;
   cursor: pointer;
 }
-/* line 600, ../sass/main.scss */
+/* line 614, ../sass/main.scss */
 .modal__info li:hover {
   color: #e32738;
   cursor: pointer;
 }
-/* line 604, ../sass/main.scss */
+/* line 618, ../sass/main.scss */
 .modal__info p {
   color: white;
 }
 
-/* line 609, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 .modal__close {
   font-family: serif;
   position: absolute;
@@ -768,7 +781,7 @@ label {
   text-align: center;
 }
 
-/* line 622, ../sass/main.scss */
+/* line 636, ../sass/main.scss */
 .modal__closetwo {
   position: absolute;
   z-index: -1;
@@ -778,18 +791,18 @@ label {
   bottom: 0;
 }
 
-/* line 631, ../sass/main.scss */
+/* line 645, ../sass/main.scss */
 .modal__check:checked + .modal {
   opacity: 1;
   right: 0;
 }
 
-/* line 636, ../sass/main.scss */
+/* line 650, ../sass/main.scss */
 .modal__close:hover {
   opacity: 0.7;
 }
 
-/* line 640, ../sass/main.scss */
+/* line 654, ../sass/main.scss */
 .modal__info::-webkit-scrollbar {
   display: none;
 }

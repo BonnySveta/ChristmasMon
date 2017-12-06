@@ -523,25 +523,29 @@ input.phone {
     height: 1em;
     padding: 42px;
     cursor: pointer;
-    margin: 0 auto;
     position: relative;
     left: 100%;
     div {
         background-color: black;
-        width: 2em;
+        width: 40px;
         height: 4px;
         margin-bottom: 5px;
         transition: all 0.2s ease-out;
     }
     &.open {
         .one {
-            transform: translateY(0.4em) rotate(45deg);
+            transform: translateY(7px) rotate(45deg);
         }
         .two {
             opacity: 0;
         }
         .three {
-            transform: translateY(-0.4em) rotate(-45deg);
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    }
+    &.mod {
+        div {
+            background-color: $blush;
         }
     }
 }
@@ -549,6 +553,16 @@ input.phone {
 .hamburger-menu:hover {
     div {
         background-color: $blush;
+    }
+}
+
+.hamburger-menu.mod {
+    margin-top: 50px;
+}
+
+.hamburger-menu.mod:hover {
+    div {
+        background-color: white;
     }
 }
 
