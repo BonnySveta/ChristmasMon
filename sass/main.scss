@@ -259,8 +259,9 @@ td {
 }
 
 .subHeader {
-    position: fixed;
     top: 60px;
+    position: absolute;
+    z-index: 2;
     p {
         font-family: "ProximaNovaReg";
         font-size: 12px;
@@ -316,6 +317,10 @@ input {
     border-radius: 50px;
     padding-left: 32px;
     margin-right: 10px;
+    outline: none;
+    color: $blush;
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
 }
 
 
@@ -372,13 +377,6 @@ input {
 
 .site-slogan {
     padding-top: 18px;
-}
-
-.subHeader {
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
 }
 
 .bgup {
@@ -475,11 +473,6 @@ input {
     margin-bottom: 26px;
 }
 
-input {
-    font-family: "ProximaNovaReg";
-    font-size: 14px;
-}
-
 input[type=submit] {
     margin-top: 30px;
 }
@@ -527,6 +520,10 @@ input.phone {
 
 .monline {
     margin-top: 40px;
+}
+
+.top-hamburger {
+    margin-top: 0 !important;
 }
 
 .hamburger-menu {
