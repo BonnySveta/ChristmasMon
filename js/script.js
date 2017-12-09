@@ -68,4 +68,20 @@ $(document).ready(function() {
             }
         }
     });
+    var menus = document.getElementsByClassName('hamburger-menu');
+
+
+    [].forEach.call(menus, function(m) {
+
+        if (m.classList.open) {
+            m.addEventListener('click', function() {
+                m.classList.toggle('open');
+            });
+        } else {
+            m.removeEventListener('click', function() {
+                m.classList.toggle('open');
+            });
+        }
+
+    });
 });

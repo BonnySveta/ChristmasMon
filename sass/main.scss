@@ -221,13 +221,18 @@ button {
 table {
     font-family: "ProximaNovaReg";
     font-size: 16px;
-    background-color: #eeeeee;
     width: 100%;
 }
 
 tr {
     border-bottom: 4px solid $up;
     height: 38px;
+    background-color: #eeeeee;
+}
+
+tr:hover td {
+    background-color: black;
+    color: white;
 }
 
 td {
@@ -236,6 +241,11 @@ td {
 
 .bgup {
     background-color: $up;
+    height: 100%;
+}
+
+.bggradient {
+    background: linear-gradient(to bottom, $up 50%, $down 50%);
     height: 100%;
 }
 
@@ -439,6 +449,7 @@ input {
 
 .table-action {
     margin-top: 70px;
+    text-align: end;
 }
 
 // Bonny
@@ -448,14 +459,14 @@ input {
     height: calc(100% - 250px);
 }
 
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    // height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
+// .map-responsive iframe {
+//     left: 0;
+//     top: 0;
+//     // height: 100%;
+//     width: 100%;
+//     height: calc(100% - 250px);
+//     position: absolute;
+// }
 .inline {
     display: inline-block;
 }
@@ -470,7 +481,6 @@ input {
 }
 
 input[type=submit] {
-    cursor: pointer;
     margin-top: 30px;
 }
 
@@ -520,8 +530,8 @@ input.phone {
 }
 
 .hamburger-menu {
-    height: 1em;
-    padding: 42px;
+    height: 40px;
+    margin-top: 56px;
     cursor: pointer;
     position: relative;
     left: 100%;
@@ -534,13 +544,13 @@ input.phone {
     }
     &.open {
         .one {
-            transform: translateY(7px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
         }
         .two {
             opacity: 0;
         }
         .three {
-            transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
         }
     }
     &.mod {
