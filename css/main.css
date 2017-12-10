@@ -264,7 +264,7 @@ button {
   text-align: left;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: calc(100% - 100px);
   background: url("../img/bgs/bg2.jpg") no-repeat center center;
 }
 
@@ -454,7 +454,7 @@ input {
 .section-venki {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: calc(100% - 100px);
 }
 
 /* line 351, ../sass/main.scss */

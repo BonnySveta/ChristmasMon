@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage__holder').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+        anchors: ['home', 'description', 'caracters', 'ofer', 'contacts', 'map'],
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
             if (slideAnchor == 'slide1') {
                 $('.slide-hand').addClass('hand-animated');
@@ -68,9 +68,8 @@ $(document).ready(function() {
             }
         }
     });
+
     var menus = document.getElementsByClassName('hamburger-menu');
-
-
     [].forEach.call(menus, function(m) {
 
         if (m.classList.open) {
@@ -86,6 +85,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).on('click', '.modal__info li', function(){
+$(document).on('click', '.modal__info li', function() {
     $('.modal__check').prop('checked', false)
 });
