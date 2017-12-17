@@ -268,8 +268,8 @@ button:hover {
   text-align: left;
   display: flex;
   align-items: center;
-  height: calc(100% - 200px);
-  background: url("../img/bgs/bg2.jpg") no-repeat center center;
+  height: 100%;
+  position: relative;
 }
 
 /* line 193, ../sass/main.scss */
@@ -342,8 +342,13 @@ td {
 
 /* line 252, ../sass/main.scss */
 .bggradient {
-  background: linear-gradient(to bottom, #e9e6e8 50%, #f2f2f2 50%);
+  background: #e9e6e8;
+  background: -moz-linear-gradient(top, #e9e6e8 0%, #f2f2f2 100%); 
+  background: -webkit-linear-gradient(top, #e9e6e8 0%,#f2f2f2 100%);
+  background: linear-gradient(to bottom, #e9e6e8 0%,#f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e6e8', endColorstr='#f2f2f2',GradientType=0 );
   height: 100%;
+  position: relative;
 }
 
 /* line 257, ../sass/main.scss */
@@ -359,9 +364,18 @@ td {
 
 /* line 266, ../sass/main.scss */
 .subHeader {
-  top: 60px;
   position: absolute;
-  z-index: 2;
+  top: 60px;
+  z-index: 3;
+  left: 0;
+  right: 0;
+}
+
+.m-toggle {
+  float: right;
+}
+.subHeader-arrow {
+  float: left;
 }
 /* line 270, ../sass/main.scss */
 .subHeader p {
@@ -458,7 +472,7 @@ input {
 .section-venki {
   display: flex;
   align-items: center;
-  height: calc(100% - 200px);
+  height: 100%
 }
 
 /* line 356, ../sass/main.scss */
@@ -528,6 +542,8 @@ input {
 .specification {
   background-image: none;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* line 415, ../sass/main.scss */
@@ -562,6 +578,50 @@ input {
 .slide-candy.candy-animated {
   opacity: 1;
   transform: translateY(0);
+  animation: animatonOpacity .8s;
+}
+
+.section-venki .ofer {
+  max-width: 260px;
+  margin: 0 auto
+}
+
+.site-logo {
+  float: left;
+}
+
+.slide-zoom {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -266px;
+  margin-left: 20px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform .4s ease-out
+}
+
+.slide-zoom.zoom-animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animatonOpacity .2s;
+}
+
+@-webkit-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes animatonOpacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* line 444, ../sass/main.scss */
@@ -664,11 +724,7 @@ input.phone {
 
 /* line 534, ../sass/main.scss */
 .hamburger-menu {
-  height: 40px;
-  margin-top: 56px;
   cursor: pointer;
-  position: relative;
-  left: 100%;
 }
 /* line 540, ../sass/main.scss */
 .hamburger-menu div {
@@ -677,6 +733,10 @@ input.phone {
   height: 4px;
   margin-bottom: 5px;
   transition: all 0.2s ease-out;
+}
+
+.hamburger-menu div:last-child {
+  margin-bottom: 0
 }
 /* line 548, ../sass/main.scss */
 .hamburger-menu.open .one {
@@ -701,9 +761,6 @@ input.phone {
 }
 
 /* line 571, ../sass/main.scss */
-.hamburger-menu.mod {
-  margin-top: 50px;
-}
 
 /* line 576, ../sass/main.scss */
 .hamburger-menu.mod:hover div {

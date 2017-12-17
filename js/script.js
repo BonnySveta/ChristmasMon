@@ -1,4 +1,38 @@
+var md = new MobileDetect(window.navigator.userAgent);
+
 $(document).ready(function() {
+
+    var menus = document.getElementsByClassName('hamburger-menu');
+    [].forEach.call(menus, function(m) {
+
+        m.addEventListener('click', function() {
+            if (m.classList.open) {
+                m.addEventListener('click', function() {
+                    m.classList.toggle('open');
+                });
+            } else {
+                m.removeEventListener('click', function() {
+                    m.classList.toggle('open');
+                });
+            }
+        });
+    });
+});
+
+var modals = document.getElementsByClassName('modal');
+[].forEach.call(modals, function(m) {
+
+    m.addEventListener('click', function() {
+        m.classList.toggle('open');
+    });
+});
+
+
+$(document).on('click', '.modal__info li', function() {
+    $('.modal__check').prop('checked', false)
+});
+
+if (!md.mobile() && !md.tablet()) {
     $('#fullpage__holder').fullpage({
         anchors: ['home', 'description', 'caracters', 'ofer', 'contacts', 'map'],
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
@@ -72,33 +106,4 @@ $(document).ready(function() {
             }
         }
     });
-
-    var menus = document.getElementsByClassName('hamburger-menu');
-    [].forEach.call(menus, function(m) {
-
-        m.addEventListener('click', function() {
-            if (m.classList.open) {
-                m.addEventListener('click', function() {
-                    m.classList.toggle('open');
-                });
-            } else {
-                m.removeEventListener('click', function() {
-                    m.classList.toggle('open');
-                });
-            }
-        });
-    });
-});
-
-var modals = document.getElementsByClassName('modal');
-[].forEach.call(modals, function(m) {
-
-    m.addEventListener('click', function() {
-        m.classList.toggle('open');
-    });
-});
-
-
-$(document).on('click', '.modal__info li', function() {
-    $('.modal__check').prop('checked', false)
-});
+};
