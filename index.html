@@ -3,471 +3,482 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Christmas</title>
     <link rel="stylesheet" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/font.css" />
-
 </head>
 
 <body>
-    <div id="fullpage__holder">
-        <!-- SECTION 1 -->
-        <div class="section">
-            <a name="home"></a>
-            <div class="bggradient">
-                <div class="head">
-                    <div class="container">
-                        <div class="site-logo">
-                            <img src="img/Pics/philips.png" alt="">
-                        </div>
-                        <div class="site-slogan">
-                            <p> ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ ОТ КОМПАНИИ МОНЛАЙН В ХАБАРОВСКЕ </p>
-                        </div>
-                        <label for="modal">
-                            <div for="modal" class="hamburger-menu top-hamburger">
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+
+        if (!md.mobile() && !md.tablet()) {
+            //инит с настройками для десктопа
+        } else {
+            //для мобилки
+        }
+    </script>
+    <div style="position : relative">
+        <div id="fullpage__holder">
+            <!-- SECTION 1 -->
+            <div class="section">
+                <div class="bggradient">
+                    <div class="head">
+                        <div class="container">
+                            <div class="site-logo">
+                                <img src="img/Pics/philips.png" alt="">
+                            </div>
+                            <div class="site-slogan">
+                                <p> ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ ОТ КОМПАНИИ МОНЛАЙН В ХАБАРОВСКЕ </p>
+                            </div>
+                            <label for="modal">
+                            <div for="modal" class="hamburger-menu top-hamburger ">
                                 <div class="one"></div>
                                 <div class="two"></div>
                                 <div class="three"></div>
                             </div>
                         </label>
-                    </div>
-                </div>
-                <div class="main">
-                    <div class="main__inner">
-                        <p>СТИЛЬНЫЙ БЕЛЫЙ</p>
-                        <h1>Монитор PHILIPS <br> с функцией MHL </h1>
-                        <div class="panel">
-                            <div class="transparent-cell left">
-                                <strong> PHILIPS </strong> 234E5QHAW
-                            </div>
-                            <div class="transparent-cell right">
-                                ДИАГОНАЛЬ 23" | 1920Х1080 | 16:9
-                            </div>
-                            <button>КУПИТЬ СО СКИДКОЙ</button>
                         </div>
-                        <div class="mouse">
-                            <img src="img/Pics/mouse.png" alt="">
+                    </div>
+                    <div class="main">
+                        <div class="main__inner">
+                            <p>СТИЛЬНЫЙ БЕЛЫЙ</p>
+                            <h1>Монитор PHILIPS <br> с функцией MHL </h1>
+                            <div class="panel">
+                                <div class="transparent-cell left">
+                                    <strong> PHILIPS </strong> 234E5QHAW
+                                </div>
+                                <div class="transparent-cell right">
+                                    ДИАГОНАЛЬ 23" | 1920Х1080 | 16:9
+                                </div>
+                                <button onclick="$.fn.fullpage.moveTo('contacts');">КУПИТЬ СО СКИДКОЙ</button>
+                            </div>
+                            <div class="mouse">
+                                <img src="img/Pics/mouse.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- SLIDES Begin  MHL -->
-        <div id="slides" class="section">
-            <div class="slide" data-anchor="slide1" data-slide="start">
-                <div class="bggradient">
-                    <div class="container">
-                        <div class="subHeader">
-                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                            <p class="arrow"> ОПИСАНИЕ </p>
-                        </div>
-                        <label for="modal">
-                                <div for="modal" class="hamburger-menu">
+            <!-- SLIDES Begin  MHL -->
+            <div id="slides" class="section">
+                <div class="slide" data-anchor="slide1" data-slide="start">
+                    <div class="bggradient">
+                        <div class="container">
+                            <div class="subHeader">
+                                <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                                <p class="arrow"> ОПИСАНИЕ </p>
+                            </div>
+                            <label for="modal">
+                                <div for="modal" class="hamburger-menu ">
                                     <div class="one"></div>
                                     <div class="two"></div>
                                     <div class="three"></div>
                                 </div>
                             </label>
-                    </div>
-                    <div class="specification specification-1">
-                        <div class="specification__inner">
+                        </div>
+                        <div class="specification specification-1">
+                            <div class="specification__inner">
 
-                            <div class="container">
+                                <div class="container">
 
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div>
-                                            <div class="black-cell ">
-                                                <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div>
+                                                <div class="black-cell ">
+                                                    <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
+                                                </div>
+                                                <div class="transparent-cell december">
+                                                    <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
+                                                </div>
                                             </div>
-                                            <div class="transparent-cell december">
-                                                <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
+                                            <div class="features">
+                                                <div class="title">
+                                                    <h2> Подключайте свой телефон к монитору через специальный <strong>  MHL-кабель </strong></h2>
+                                                </div>
+                                                <div class="description">
+                                                    <p> Играйте в мобильные игры на большом экране! Смотрите фото и видео в HD качестве, подключив телефон к монитору PHILIPS с функцией MHL. Непрерывная зарядка от кабеля не даст батарее разрядиться.</p>
+                                                </div>
                                             </div>
+                                            <button onclick="$.fn.fullpage.moveTo('contacts');">КУПИТЬ СО СКИДКОЙ</button>
                                         </div>
-                                        <div class="features">
-                                            <div class="title">
-                                                <h2> Подключайте свой телефон к монитору через специальный <strong>  MHL-кабель </strong></h2>
-                                            </div>
-                                            <div class="description">
-                                                <p> Играйте в мобильные игры на большом экране! Смотрите фото и видео в HD качестве, подключив телефон к монитору PHILIPS с функцией MHL. Непрерывная зарядка от кабеля не даст батарее разрядиться.</p>
-                                            </div>
-                                        </div>
-                                        <button>КУПИТЬ СО СКИДКОЙ</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="slide-hand">
-                                <img src="img/Pics/Monitors/phone.png" alt="">
+                                <div class="slide-hand">
+                                    <img src="img/Pics/Monitors/phone.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- SLIDES Begin  SLIM* -->
-            <div class="slide" data-anchor="slide2">
-                <div class="bggradient">
-                    <div class="container">
-                        <div class="subHeader">
-                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                            <p class="arrow"> ОПИСАНИЕ </p>
-                        </div>
-                        <label for="modal">
-                                        <div for="modal" class="hamburger-menu">
+                <!-- SLIDES Begin  SLIM* -->
+                <div class="slide" data-anchor="slide2">
+                    <div class="bggradient">
+                        <div class="container">
+                            <div class="subHeader">
+                                <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                                <p class="arrow"> ОПИСАНИЕ </p>
+                            </div>
+                            <label for="modal">
+                                        <div for="modal" class="hamburger-menu ">
                                             <div class="one"></div>
                                             <div class="two"></div>
                                             <div class="three"></div>
                                         </div>
                                     </label>
-                    </div>
-                    <div class="specification specification-2">
-                        <div class="specification__inner">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div>
-                                            <div class="black-cell ">
-                                                <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
+                        </div>
+                        <div class="specification specification-2">
+                            <div class="specification__inner">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div>
+                                                <div class="black-cell ">
+                                                    <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
+                                                </div>
+                                                <div class="transparent-cell december">
+                                                    <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
+                                                </div>
                                             </div>
-                                            <div class="transparent-cell december">
-                                                <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
+                                            <div class="features">
+                                                <div class="title">
+                                                    <h2> <strong> Ультратонкая</strong> рамка </h2>
+                                                </div>
+                                                <div class="description">
+                                                    <p> Новые дисплеи Philips отличаются не только панелями, выполненными по последним технологиям, но и минималистичным дизайном, выраженным в ультратонкой рамке шириной всего 2,5 мм. Монитор обладает широким
+                                                        углом обзора,равным 178 градусов по вертикали и по горизонтали.</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="features">
-                                            <div class="title">
-                                                <h2> <strong> Ультратонкая</strong> рамка </h2>
-                                            </div>
-                                            <div class="description">
-                                                <p> Новые дисплеи Philips отличаются не только панелями, выполненными по последним технологиям, но и минималистичным дизайном, выраженным в ультратонкой рамке шириной всего 2,5 мм. Монитор обладает широким углом
-                                                    обзора,равным 178 градусов по вертикали и по горизонтали.</p>
-                                            </div>
-                                        </div>
 
-                                        <button>КУПИТЬ СО СКИДКОЙ</button>
+                                            <button onclick="$.fn.fullpage.moveTo('contacts');">КУПИТЬ СО СКИДКОЙ</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- <div class="slide-zoom">
+                                <!-- <div class="slide-zoom">
                                 <img src="img/Pics/zoom.png" alt="">
                             </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- SLIDES Begin  SPEAKER -->
-            <div class="slide" data-anchor="slide3" data-slide="end">
-                <div class="bggradient">
-                    <div class="container">
-                        <div class="subHeader">
-                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                            <p class="arrow"> ОПИСАНИЕ </p>
-                        </div>
-                        <label for="modal">
-                                        <div for="modal" class="hamburger-menu">
+                <!-- SLIDES Begin  SPEAKER -->
+                <div class="slide" data-anchor="slide3" data-slide="end">
+                    <div class="bggradient">
+                        <div class="container">
+                            <div class="subHeader">
+                                <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                                <p class="arrow"> ОПИСАНИЕ </p>
+                            </div>
+                            <label for="modal">
+                                        <div for="modal" class="hamburger-menu ">
                                             <div class="one"></div>
                                             <div class="two"></div>
                                             <div class="three"></div>
                                         </div>
                                     </label>
-                    </div>
+                        </div>
 
-                    <div class="specification specification-3">
-                        <div class="specification__inner">
+                        <div class="specification specification-3">
+                            <div class="specification__inner">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div>
+                                                <div class="black-cell ">
+                                                    <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
+                                                </div>
+                                                <div class="transparent-cell december">
+                                                    <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="title">
+                                                    <h2> Встроенные <strong> стереодинамики</strong> </h2>
+                                                </div>
+                                                <div class="description">
+                                                    <p>Два стереодинамика мощностью 10 Вт позволят в полной мере насладиться звуком в фильме и мультимедийных приложениях.</p>
+                                                </div>
+                                            </div>
+                                            <button onclick="$.fn.fullpage.moveTo('contacts');">КУПИТЬ СО СКИДКОЙ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-candy">
+                                    <img src="img/Pics/candy.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDES End -->
+            <!-- SECTION 2 -->
+            <div class="section">
+                <div class="bgup">
+                    <div class="container">
+                        <div class="subHeader">
+                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                            <p class="arrow"> ХАРАКТЕРИСТИКИ </p>
+                        </div>
+                        <label for="modal">
+                                    <div for="modal" class="hamburger-menu ">
+                                        <div class="one"></div>
+                                        <div class="two"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                </label>
+                    </div>
+                    <div class="section-venki">
+                        <div class="section-venki__inner">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div>
-                                            <div class="black-cell ">
-                                                <h2> СУПЕР ЦЕНА: <strong> 9900 </strong> </h2>
-                                            </div>
-                                            <div class="transparent-cell december">
-                                                <p>ТОЛЬКО В ДЕКАБРЕ 2017</p>
-                                            </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <table>
+                                            <tr>
+                                                <td> Диагональ</td>
+                                                <td>23"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Тип матрицы экрана</td>
+                                                <td>строка2 ячейка2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Разрешение</td>
+                                                <td>GJHYT </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Подсветка</td>
+                                                <td>КЕНГ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Частота обновления кадров</td>
+                                                <td>75 ГЦ</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Диагональ</td>
+                                                <td>23"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Тип матрицы экрана</td>
+                                                <td>бэст оф зэ бэст</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Разрешение</td>
+                                                <td>хз</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Подсветка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Частота обновления кадров</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <table>
+                                            <tr>
+                                                <td>Шаг точки по горизонтали</td>
+                                                <td>0,265 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Шаг точки по вертикали</td>
+                                                <td>0,265 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Яркость</td>
+                                                <td>250 кд/м2 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Контрастность</td>
+                                                <td>1000:1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Динамическая контрастность</td>
+                                                <td>20000000:1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Время отклика</td>
+                                                <td>5 мс</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Область обзора</td>
+                                                <td>по горизонтали: 178*</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Максимальное колличество цветов</td>
+                                                <td>16.7 млн.</td>
+                                            </tr>
+                                        </table>
+                                        <div class="table-action">
+                                            <button onclick="$.fn.fullpage.moveTo('contacts');">КУПИТЬ СО СКИДКОЙ</button>
                                         </div>
-                                        <div class="features">
-                                            <div class="title">
-                                                <h2> Встроенные <strong> стереодинамики</strong> </h2>
-                                            </div>
-                                            <div class="description">
-                                                <p>Два стереодинамика мощностью 10 Вт позволят в полной мере насладиться звуком в фильме и мультимедийных приложениях.</p>
-                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- SECTION 4 -->
+            <div class="section">
+                <div class="bgup">
+                    <div class="container">
+                        <div class="subHeader">
+                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                            <p class="arrow"> ОСОБОЕ ПРЕДЛОЖЕНИЕ </p>
+                        </div>
+                        <label for="modal">
+                                    <div for="modal" class="hamburger-menu ">
+                                        <div class="one"></div>
+                                        <div class="two"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                </label>
+                    </div>
+                    <div class="section-venki">
+                        <div class="section-venki__inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="ofer">
+                                            <img src="img/Pics/Decorations/0.png" alt="">
+                                            <h3>
+                                                Качество PHILIPS
+                                            </h3>
+                                            <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
                                         </div>
-                                        <button>КУПИТЬ СО СКИДКОЙ</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide-candy">
-                                <img src="img/Pics/candy.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- SLIDES End -->
-        <!-- SECTION 2 -->
-        <div class="section">
-            <div class="bgup">
-                <div class="container">
-                    <div class="subHeader">
-                        <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                        <p class="arrow"> ХАРАКТЕРИСТИКИ </p>
-                    </div>
-                    <label for="modal">
-                                    <div for="modal" class="hamburger-menu">
-                                        <div class="one"></div>
-                                        <div class="two"></div>
-                                        <div class="three"></div>
                                     </div>
-                                </label>
-                </div>
-                <div class="section-venki">
-                    <div class="section-venki__inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <table>
-                                        <tr>
-                                            <td> Диагональ</td>
-                                            <td>23"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Тип матрицы экрана</td>
-                                            <td>строка2 ячейка2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Разрешение</td>
-                                            <td>GJHYT </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Подсветка</td>
-                                            <td>КЕНГ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Частота обновления кадров</td>
-                                            <td>75 ГЦ</td>
-                                        </tr>
-                                        <tr>
-                                            <td> Диагональ</td>
-                                            <td>23"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Тип матрицы экрана</td>
-                                            <td>бэст оф зэ бэст</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Разрешение</td>
-                                            <td>хз</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Подсветка</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Частота обновления кадров</td>
-                                            <td></td>
-                                        </tr>
-                                    </table>
-                                </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="ofer">
+                                            <img src="img/Pics/Decorations/0.png" alt="">
+                                            <h3>
+                                                Гарантия 1 год
+                                            </h3>
+                                            <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
 
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <table>
-                                        <tr>
-                                            <td>Шаг точки по горизонтали</td>
-                                            <td>0,265 мм</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Шаг точки по вертикали</td>
-                                            <td>0,265 мм</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Яркость</td>
-                                            <td>250 кд/м2 </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Контрастность</td>
-                                            <td>1000:1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Динамическая контрастность</td>
-                                            <td>20000000:1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Время отклика</td>
-                                            <td>5 мс</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Область обзора</td>
-                                            <td>по горизонтали: 178*</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Максимальное колличество цветов</td>
-                                            <td>16.7 млн.</td>
-                                        </tr>
-                                    </table>
-                                    <div class="table-action">
-                                        <button>КУПИТЬ СО СКИДКОЙ</button>
+                                        <div class="ofer">
+                                            <img src="img/Pics/Decorations/0.png" alt="">
+                                            <h3>
+                                                Доставка
+                                            </h3>
+                                            <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- SECTION 4 -->
-        <div class="section">
-            <div class="bgup">
-                <div class="container">
-                    <div class="subHeader">
-                        <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                        <p class="arrow"> ОСОБОЕ ПРЕДЛОЖЕНИЕ </p>
-                    </div>
-                    <label for="modal">
-                                    <div for="modal" class="hamburger-menu">
-                                        <div class="one"></div>
-                                        <div class="two"></div>
-                                        <div class="three"></div>
-                                    </div>
-                                </label>
-                </div>
-                <div class="section-venki">
-                    <div class="section-venki__inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="ofer">
-                                        <img src="img/Pics/Decorations/0.png" alt="">
-                                        <h3>
-                                            Качество PHILIPS
-                                        </h3>
-                                        <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="ofer">
-                                        <img src="img/Pics/Decorations/0.png" alt="">
-                                        <h3>
-                                            Гарантия 1 год
-                                        </h3>
-                                        <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-
-                                    <div class="ofer">
-                                        <img src="img/Pics/Decorations/0.png" alt="">
-                                        <h3>
-                                            Доставка
-                                        </h3>
-                                        <p class="arrow">Компания PHILIPS уже давно зарекомендовала себя на рынке как надежный производитель техники </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="venki__action">
-                                <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- SECTION 5 -->
-        <div class="section">
-            <div class="row bgup">
-                <div class="container">
-                    <div class="subHeader">
-                        <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
-                        <p class="arrow"> КОНТАКТЫ И АДРЕСА </p>
-                    </div>
-                    <label for="modal">
-                                    <div for="modal" class="hamburger-menu">
-                                        <div class="one"></div>
-                                        <div class="two"></div>
-                                        <div class="three"></div>
-                                    </div>
-                                </label>
-                </div>
-                <div class="section-venki">
-                    <div class="section-venki__inner">
-                        <div class="container">
-                            <div class="contacts">
-                                <div class="address">
-                                    <h2 class="inline">Ждём вас по адресу:</h2>
-                                    <p class="inline">&#171;Монлайн&#187;, Калинина 65А, Хабаровск </p>
-                                </div>
-
-                                <h2>Звоните, если есть вопросы: <span>8 (4212) 314-272 </span></h2>
-                                <div class="schedule">
-                                    <div class="black-cell smallBlack-cell ">
-                                        <p> ПОНЕДЕЛЬНИК-ПЯТНИЦА: 10:00-19:00 </p>
-                                    </div>
-                                    <div class="black-cell smallBlack-cell ">
-                                        <p>СУББОТА: 10:00-18:00 </p>
-                                    </div>
-                                    <div class="black-cell smallBlack-cell">
-                                        <p> ВОСКРЕСЕНЬЕ: 10:00-16:00 </p>
-                                    </div>
-                                </div>
-                                <p>... или оставьте свой номер телефона, заварите чай и мы перезвоним Вам сами! </p>
-                                <div class="form">
-                                    <input class="name" type="text" name="name" placeholder="КАК ВАС ЗОВУТ?" required/>
-                                    <input class="phone" type="tel" name="phone" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="ВВЕДИТЕ НОМЕР ДЛЯ СВЯЗИ" required/>
+                                <div class="venki__action">
                                     <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</button>
                                 </div>
-                                <img src="img/Pics/Decorations/CUP.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- SECTION 6 -->
-        <div class="section">
-            <div class="row map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.070488485357!2d135.0602663158238!3d48.47436153562276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efaea27b3c4fe0d%3A0xae0765465d3b6447!2z0YPQuy4g0JrQsNC70LjQvdC40L3QsCwgNjXQkCwg0KXQsNCx0LDRgNC-0LLRgdC6LCDQpdCw0LHQsNGA0L7QstGB0LrQuNC5INC60YDQsNC5LCA2ODAwMDA!5e0!3m2!1sru!2sru!4v1512290543862"
-                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="footer">
-                <div class="container">
-                    <div class="row ">
-                        <div class=" col-sm-4 col-md-4 col-lg-4">
-                            <p>ООО &#171;МОНЛАЙН&#187; </p>
-                            <div class="monline">
-                                <p>Продажа и ремонт комрьютерной техники </p>
-                            </div>
-
+            <!-- SECTION 5 -->
+            <div class="section">
+                <div class="row bgup">
+                    <div class="container">
+                        <div class="subHeader">
+                            <img class="arrow" src="img/Pics/Icons/arrow_right.png" alt="">
+                            <p class="arrow"> КОНТАКТЫ И АДРЕСА </p>
                         </div>
-                        <div class=" col-sm-4 col-md-4 col-lg-4">
-                            <p>Калинина 65А, Хабаровск </p>
-                            <div class="phones">
-                                <span> 8(4212) 314-272 </span> <br>
-                                <span> 8(4212) 311-895 </span>
-                            </div>
+                        <label for="modal">
+                                    <div for="modal" class="hamburger-menu ">
+                                        <div class="one"></div>
+                                        <div class="two"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                </label>
+                    </div>
+                    <div class="section-venki">
+                        <div class="section-venki__inner">
+                            <div class="container">
+                                <div class="contacts">
+                                    <div class="address">
+                                        <h2 class="inline">Ждём вас по адресу:</h2>
+                                        <p class="inline">&#171;Монлайн&#187;, Калинина 65А, Хабаровск </p>
+                                    </div>
 
-                        </div>
-                        <div class=" col-sm-4 col-md-4 col-lg-4">
-                            <p>Часы работы: </p>
-                            <div class="timing">
-                                <p>Понедельник-пятница: </br> 10:00-19:00 </p>
-                                <p>Суббота: 10:00-18:00</p>
-                                <p>Воскресенье: 10:00-16:00 </p>
+                                    <h2>Звоните, если есть вопросы: <span>8 (4212) 314-272 </span></h2>
+                                    <div class="schedule">
+                                        <div class="black-cell smallBlack-cell ">
+                                            <p> ПОНЕДЕЛЬНИК-ПЯТНИЦА: 10:00-19:00 </p>
+                                        </div>
+                                        <div class="black-cell smallBlack-cell ">
+                                            <p>СУББОТА: 10:00-18:00 </p>
+                                        </div>
+                                        <div class="black-cell smallBlack-cell">
+                                            <p> ВОСКРЕСЕНЬЕ: 10:00-16:00 </p>
+                                        </div>
+                                    </div>
+                                    <p>... или оставьте свой номер телефона, заварите чай и мы перезвоним Вам сами! </p>
+                                    <div class="form">
+                                        <input class="name" type="text" name="name" placeholder="КАК ВАС ЗОВУТ?" required/>
+                                        <input class="phone" type="tel" name="phone" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="ВВЕДИТЕ НОМЕР ДЛЯ СВЯЗИ" required/>
+                                        <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</button>
+                                    </div>
+                                    <img src="img/Pics/Decorations/CUP.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- SECTION 6 -->
+            <div class="section">
+                <div class="row map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.070488485357!2d135.0602663158238!3d48.47436153562276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efaea27b3c4fe0d%3A0xae0765465d3b6447!2z0YPQuy4g0JrQsNC70LjQvdC40L3QsCwgNjXQkCwg0KXQsNCx0LDRgNC-0LLRgdC6LCDQpdCw0LHQsNGA0L7QstGB0LrQuNC5INC60YDQsNC5LCA2ODAwMDA!5e0!3m2!1sru!2sru!4v1512290543862"
+                        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row ">
+                            <div class=" col-sm-4 col-md-4 col-lg-4">
+                                <p>ООО &#171;МОНЛАЙН&#187; </p>
+                                <div class="monline">
+                                    <p>Продажа и ремонт комрьютерной техники </p>
+                                </div>
+
+                            </div>
+                            <div class=" col-sm-4 col-md-4 col-lg-4">
+                                <p>Калинина 65А, Хабаровск </p>
+                                <div class="phones">
+                                    <span> 8(4212) 314-272 </span> <br>
+                                    <span> 8(4212) 311-895 </span>
+                                </div>
+
+                            </div>
+                            <div class=" col-sm-4 col-md-4 col-lg-4">
+                                <p>Часы работы: </p>
+                                <div class="timing">
+                                    <p>Понедельник-пятница: </br> 10:00-19:00 </p>
+                                    <p>Суббота: 10:00-18:00</p>
+                                    <p>Воскресенье: 10:00-16:00 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Modal -->
         <input class="modal__check" type="checkbox" id="modal" />
 
-        <div class="modal ">
+        <div class="modal">
             <label class="modal__closetwo" for="modal"></label>
             <div class="modal__info">
                 <div class="container">
@@ -478,22 +489,19 @@
                         </div>
                     </div>
                     <label for="modal">
-                        <div for="modal" class="hamburger-menu mod open">
-                            <div class="one"></div>
-                            <div class="two"></div>
-                            <div class="three"></div>
-                        </div>
-                    </label>
+                                                        <div for="modal" class="hamburger-menu mod open">
+                                                            <div class="one"></div>
+                                                            <div class="two"></div>
+                                                            <div class="three"></div>
+                                                        </div>
+                                                    </label>
                 </div>
                 <div class="section-venki">
                     <div class="container">
                         <div class="section-venki__inner">
                             <ul>
-
                                 <li class="ref" onclick="$.fn.fullpage.moveTo('home');">ГЛАВНАЯ СТРАНИЦА</li>
                                 <li onclick="$.fn.fullpage.moveTo('description');">ОПИСАНИЕ</li>
-                                <!-- <li onclick="$.fn.fullpage.moveTo('page2', 1);">ОПИСАНИЕ 2</li> -->
-                                <!-- <li onclick="$.fn.fullpage.moveTo('page2', 2);">ОПИСАНИЕ 3</li> -->
                                 <li onclick="$.fn.fullpage.moveTo('caracters');">ХАРАКТЕРИСТИКИ</li>
                                 <li onclick="$.fn.fullpage.moveTo('ofer');">ОСОБОЕ ПРЕДЛОЖЕНИЕ</li>
                                 <li onclick="$.fn.fullpage.moveTo('contacts');">КОНТАКТЫ И АДРЕСА</li>
@@ -506,11 +514,22 @@
         </div>
     </div>
 
+
+
+
+
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mobile-detected.min.js"></script>
+    <!-- <script>
+        if (screen && screen.width > 768) {
+            document.write('<script type="text/javascript" src="js/jquery.fullpage.js"><\/script>');
+            document.write('<script type="text/javascript" src="js/fullpageExtention.js"><\/script>');
+        }
+    </script> -->
+    </script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
 </body>
 
 </html>

@@ -2,20 +2,24 @@ $(document).ready(function() {
     $('#fullpage__holder').fullpage({
         anchors: ['home', 'description', 'caracters', 'ofer', 'contacts', 'map'],
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+            console.log('slideAnchor ' + slideAnchor);
+
             if (slideAnchor == 'slide1') {
                 $('.slide-hand').addClass('hand-animated');
             } else {
                 $('.slide-hand').removeClass('hand-animated');
             }
-            if (slideAnchor == 'slide3') {
-                $('.slide-candy').addClass('candy-animated');
-            } else {
-                $('.slide-candy').removeClass('candy-animated');
-            }
+
             if (slideAnchor == 'slide2') {
                 $('.slide-zoom').addClass('zoom-animated');
             } else {
                 $('.slide-zoom').removeClass('zoom-animated');
+            }
+
+            if (slideAnchor == 'slide3') {
+                $('.slide-candy').addClass('candy-animated');
+            } else {
+                $('.slide-candy').removeClass('candy-animated');
             }
         },
 
@@ -72,18 +76,28 @@ $(document).ready(function() {
     var menus = document.getElementsByClassName('hamburger-menu');
     [].forEach.call(menus, function(m) {
 
-        if (m.classList.open) {
-            m.addEventListener('click', function() {
-                m.classList.toggle('open');
-            });
-        } else {
-            m.removeEventListener('click', function() {
-                m.classList.toggle('open');
-            });
-        }
-
+        m.addEventListener('click', function() {
+            if (m.classList.open) {
+                m.addEventListener('click', function() {
+                    m.classList.toggle('open');
+                });
+            } else {
+                m.removeEventListener('click', function() {
+                    m.classList.toggle('open');
+                });
+            }
+        });
     });
 });
+
+var modals = document.getElementsByClassName('modal');
+[].forEach.call(modals, function(m) {
+
+    m.addEventListener('click', function() {
+        m.classList.toggle('open');
+    });
+});
+
 
 $(document).on('click', '.modal__info li', function() {
     $('.modal__check').prop('checked', false)
