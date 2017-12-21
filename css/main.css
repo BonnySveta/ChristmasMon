@@ -867,3 +867,9 @@ label {
 .modal__info::-webkit-scrollbar {
   display: none;
 }
+
+.section-tea {
+  background-image: url(../img/bgs/tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom
+}
